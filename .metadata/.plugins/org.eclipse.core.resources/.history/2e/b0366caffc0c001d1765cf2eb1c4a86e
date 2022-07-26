@@ -1,0 +1,15 @@
+package calc;
+import java.util.Scanner;
+public class calculater {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double a,b,result;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first value...");
+		a=sc.nextDouble();
+		System.out.println("Enter the second value...");
+		System.out.println(a+" "+b);
+	}
+
+}
