@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Phase-1 Practice Project 1/src/calc/calculater.java"/>
+<listEntry value="/Phase 1- Practice Project 1/src/calc/calculater.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="calc.calculater"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Phase-1 Practice Project 1"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Phase 1- Practice Project 1"/>
 </launchConfiguration>
