@@ -1,0 +1,16 @@
+package String;
+
+public class strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String sl=new String("Hello World");
+		System.out.print(sl);
+		System.out.print("\n"+sl.length());
+		System.out.print("\n"+sl.substring(2));
+		String sl1="Hello";
+		String sl2="Heldo";
+		System.out.print("\n"+sl1.compareTo(sl2));
+	}
+
+}

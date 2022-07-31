@@ -1,0 +1,63 @@
+package String;
+
+public class strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String sl=new String("Hello World");
+		System.out.println(sl);
+		System.out.println(sl.length());
+		System.out.println(sl.substring(2));
+		String sl1="HO";
+		String sl2="He";
+		System.out.println(sl1.compareTo(sl2));
+		String sl3="";
+		System.out.println(sl3.isEmpty());
+		System.out.println(sl1.toLowerCase());
+		System.out.println(sl1.replace('O', 'e'));
+		System.out.println(sl1.compareTo(sl2));
+		System.out.println("Creating StringBuffer");
+		StringBuffer s=new StringBuffer("I'm Learning String: ");
+		s.append("Start Learning");
+		System.out.println(s);
+
+		s.insert(0, 'w');
+		System.out.println(s);
+
+		StringBuffer sb=new StringBuffer("Hello");
+		sb.replace(0, 2, "hEl");
+		System.out.println(sb);
+
+		sb.delete(0, 2);
+		System.out.println(sb);
+		
+		System.out.println("\n");
+		System.out.println("Creating StringBuilder");
+		StringBuilder sb1=new StringBuilder("Happy");
+		sb1.append("Learning");
+		System.out.println(sb1);
+
+		System.out.println(sb1.delete(0, 1));
+
+		System.out.println(sb1.insert(1, "Welcome"));
+
+		System.out.println(sb1.reverse());
+					
+		System.out.println("\n");
+		System.out.println("Conversion of Strings to StringBuffer and StringBuilder");
+		
+		String str = "Java FSD "; 
+        
+        StringBuffer sbr = new StringBuffer(str); 
+        sbr.reverse(); 
+        System.out.println("String to StringBuffer");
+        System.out.println(sbr); 
+        
+        StringBuilder sbl = new StringBuilder(str); 
+        sbl.append("world"); 
+        System.out.println("String to StringBuilder");
+        System.out.println(sbl);              		
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package casting1;
+
+public class typecasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte b=10;
+		int a;
+		float f;
+		double d;
+		System.out.println("Implicit Typecast");
+		System.out.println("byte "+b);
+		a=b;
+		System.out.println("convert bye to int "+a);
+		f=a;
+		System.out.println("convert int to float "+f);
+		d=f;
+		System.out.println("Convert float to double "+d);
+		
+		System.out.println("\nExplicit Typecast");
+		d=234653425.56457354;
+		System.out.println("double "+d);
+		f=(float)d;
+		System.out.println("Convert double to float "+f);
+		a=(int)f;
+		System.out.println("Convert float to int "+a);
+		b=(byte)a;
+		System.out.println("Convert int to byte "+b);
+	}
+
+}

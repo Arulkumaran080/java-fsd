@@ -1,0 +1,41 @@
+package CustomException;
+import java.util.Scanner;
+public class Excptn {
+	void empsalary(int salary)throws salaryException{
+		if(salary<2100){
+			throw new salaryException("you need to work hard");
+		}
+		if(salary>=2100&&salary<=5000){
+			throw new salaryException("your salary is somehow good");
+		}
+		if(salary>5000&&salary<=9000){
+			throw new salaryException("salary is very good");
+		}
+		if(salary >9000){
+			throw new salaryException("Great");
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int salary;
+		Excptn ob=new Excptn();
+		Scanner sc=new Scanner(System.in);
+		salary = sc.nextInt();
+		try{
+			ob.empsalary(salary);
+		}
+		catch(salaryException e){
+			System.out.println(e.getMessage());
+		}
+		finally{
+			System.out.println("(finally)Your monthly salary is "+salary+", That means your annual salary is "+(salary*12));
+		}
+	}
+
+}
+
+class salaryException extends Exception{
+	salaryException(String s){
+		super(s);
+	}
+}
