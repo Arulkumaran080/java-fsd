@@ -4,14 +4,26 @@ import java.util.Scanner;
 
 public class Longsubsequence {
 	static int longestsubsequence(int[] arr,int length){
-		int max=0,i,count=0;
+		int max=0,i,j,count=0;
+		int[] x=new int[length];
 		for(i=0;i<length;i++){
-			if(arr[i]>max){
-				count++;
-				max=arr[i];
+			max=0;
+			count=0;
+			for(j=i;j<length;j++){
+				if(arr[j]>max){
+					count++;
+					max=arr[j];
+				}
+			}
+			x[i]=count;
+		}
+		max=0;
+		for(i=0;i<length;i++){
+			if(max<x[i]){
+				max=x[i];
 			}
 		}
-		return count;
+		return max;
 	}
 
 	public static void main(String[] args) {
