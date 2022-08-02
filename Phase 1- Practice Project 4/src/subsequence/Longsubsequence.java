@@ -1,0 +1,31 @@
+package subsequence;
+
+import java.util.Scanner;
+
+public class Longsubsequence {
+	static int longestsubsequence(int[] arr,int length){
+		int max=0,i,count=0;
+		for(i=0;i<length;i++){
+			if(arr[i]>max){
+				count++;
+				max=arr[i];
+			}
+		}
+		return count;
+	}
+
+	public static void main(String[] args) {
+		int[] arr=new int[100];
+		System.out.println("Enter the number of elements: ");
+		int n;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		System.out.println("Enter the elements in the array ");
+		for(int i=0;i<n;i++){
+			arr[i]=sc.nextInt();
+		}
+		
+		System.out.println("The length of the longest increasing subsequence is "+longestsubsequence(arr,n));
+	}
+
+}
