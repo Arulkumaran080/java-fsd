@@ -1,0 +1,15 @@
+package Oops.Encapsulation;
+public class student{
+	void method(){
+		System.out.println("lsdbvvvb");
+	}
+}
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student ob=new student();
+		ob.method();
+	}
+
+}

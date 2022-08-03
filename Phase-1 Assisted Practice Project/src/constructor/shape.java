@@ -5,10 +5,7 @@ public class shape {
 	int a,l,b;
 	float f;
 	double x;
-	
-	shape(){
-		
-	}
+
 	shape(int r)
 	{
 		a=r;
@@ -28,20 +25,9 @@ public class shape {
 	}
 	void area()
 	{
-		System.out.print("Area is " +x );
-		System.out.print("\n");
+		System.out.println("Area is " +x );
 	}
 	
-	void display(int a,int b)   //method overloading
-	{
-		x=(a*b)/2;
-		System.out.println("Area of triangle "+x);
-	}
-	void display(float a,float b)
-	{
-		x=(a*b)/2;
-		System.out.println("Area of rhombus "+x);
-	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -51,8 +37,7 @@ public class shape {
 		square.area();
 		rectangle.area();
 		circle.area();
-		new shape().display(6, 8);
-		new shape().display(5f, 6f);
+		
 	}
 
 

@@ -1,0 +1,47 @@
+package constructor;
+
+public class shape {
+
+	int a,l,b;
+	float f;
+	double x;
+	
+	shape(){
+		System.out.print("\nArea is ");
+	}
+	shape(int r)
+	{
+		a=r;
+		x=a*a;
+	}
+	shape(int m,int n)    //contructor overloading
+	{
+		l=m;
+		b=n;
+		x=l*b;
+		//System.out.println(x);
+	}
+	shape(float d)
+	{
+		f=d;
+		x=3.14*(f*f);
+	}
+	void area()
+	{
+		System.out.println("Area is " +x );
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		shape square=new shape(5);
+		shape rectangle=new shape(7,8);
+		shape circle=new shape(3f);
+		square.area();
+		rectangle.area();
+		circle.area();
+		
+	}
+
+
+}

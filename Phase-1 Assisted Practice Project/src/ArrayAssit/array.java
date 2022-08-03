@@ -10,7 +10,7 @@ public class array {
 		}
 		
 		int a[][]={{1,5,8,3,55,95},
-					{4,2,86,4}};
+					{4,2,86,4,5,85}};
 		System.out.println("\nLength of 1st row is "+a[0].length);
 	}
 }

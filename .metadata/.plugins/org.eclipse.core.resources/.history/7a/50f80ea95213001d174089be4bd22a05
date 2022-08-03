@@ -1,0 +1,15 @@
+package Oops.Abstract;
+class A{
+	A(){
+		System.out.println("constructor of class A");
+	}
+	
+}
+public class Abstract {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

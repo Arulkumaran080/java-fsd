@@ -1,0 +1,20 @@
+package Oops.Encapsulation;
+class student{
+	String str;
+	student(String str){
+		this.str=str;
+	}
+	String method(){
+		return str;
+	}
+}
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student ob=new student("Arul");
+		String s=ob.method();
+		System.out.println(s);
+	}
+
+}

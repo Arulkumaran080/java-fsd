@@ -1,0 +1,45 @@
+package Oops.Abstract;
+abstract class A{
+	A(){
+		System.out.println("constructor of class A");
+	}
+	abstract void abs1();
+	abstract void abs2();
+	void display(){
+		new C().abs1();
+		new C().abs2();
+	}
+}
+abstract class B extends A{
+	B(){
+		System.out.println("constructor of class B");
+	}
+	abstract void abs1();
+	abstract void abs2();
+}
+class C extends B{
+	C(){
+		System.out.println("constructor of class C");
+	}
+
+	@Override
+	void abs1() {
+		// TODO Auto-generated method stub
+		System.out.println("abstract of abs1");
+	}
+
+	@Override
+	void abs2() {
+		// TODO Auto-generated method stub
+		System.out.println("abstract of abs2");
+	}
+	
+}
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A ob=new C();
+		ob.display();
+	}
+
+}
