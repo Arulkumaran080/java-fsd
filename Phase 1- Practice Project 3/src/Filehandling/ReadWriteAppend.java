@@ -27,7 +27,7 @@ public class ReadWriteAppend {
 			s=sc.nextLine();
 			writer.append(s+"- This statement is appended");
 			writer.close();
-			FileReader in=new FileReader("D://program//text.txt");
+			FileReader in=new FileReader(file);
 			in.read(arr);
 			System.out.println(arr);   
 		}catch (IOException e) {
