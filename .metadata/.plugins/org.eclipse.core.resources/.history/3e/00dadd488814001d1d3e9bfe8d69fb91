@@ -1,0 +1,53 @@
+package MovieTicketBooking;
+
+import java.util.Scanner;
+
+public class Main extends ticket {
+	static Scanner sc=new Scanner(System.in);
+	ticket ob=new ticket();
+	public static void main(String[] args) {
+		ticket ob=new ticket();
+		System.out.println("\n**************************************************************\n");
+		System.out.println("\t WELCOME TO THE MOVIE TICKET BOOKING\n");
+		System.out.println("\t\t Developed by ARULKUMARAN T\n");
+		System.out.println("**************************************************************\n");
+		
+		System.out.println("Enter your \n\t1.User login\n\t2.Update password");
+		int n=sc.nextInt();
+		if(n==1){
+			ob.user();
+		}
+		else if(n==2){
+			ob.PasswordChange();
+		}
+		else{
+			System.out.println("Enter wrong number");
+		}
+
+	}
+	void PasswordChange() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter new password : ");
+		String newpassword=sc.nextLine();
+//		password = newpassword;
+		System.out.println("Your password is updated");
+		user(newpassword);
+	}
+	void user(String newpassword){
+		System.out.println("Enter User name : ");
+		sc=new Scanner(System.in);
+		String name=sc.nextLine();
+		System.out.println("Enter password : ");
+		String password=sc.nextLine();
+		System.out.println(password);
+		if(newpassword.equals(password)){
+			ticketbook();
+		}
+		else{
+			System.out.println("Wrong Password, Try again");
+			user();
+		}
+	}
+
+
+}
