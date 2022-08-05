@@ -40,7 +40,7 @@ public class Main extends ticket {
 		}
 		System.out.println("Enter new password : ");
 		password=new Scanner(System.in).nextLine();
-		System.out.println("\n........Your password is updated........\n");
+		System.out.println("Your password is updated");
 		login();
 		
 	}

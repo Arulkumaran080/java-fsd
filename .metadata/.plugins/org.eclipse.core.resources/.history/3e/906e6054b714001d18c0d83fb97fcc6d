@@ -65,7 +65,7 @@ public class ticket {
 		System.out.println("B"+B);
 		System.out.println("C"+C);
 		System.out.println("D"+D);
-		System.out.println("E"+E+"\n");
+		System.out.println("E\n"+E);
 		ticketbook();
 	}
 	
@@ -143,7 +143,7 @@ public class ticket {
 		System.out.println("B"+B);
 		System.out.println("C"+C);
 		System.out.println("D"+D);
-		System.out.println("E"+E+"\n");
+		System.out.println("E\n"+E);
 		System.out.println("How many ticket want to book");
 		count=sc.nextInt();
 		for(int i=1;i<=count;i++){

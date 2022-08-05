@@ -39,7 +39,7 @@ public class ticket {
 	static int count;
 	static LinkedList<String> seats=new LinkedList<String>();
 	static void ticketbook(){
-		System.out.println("\nEnter your choice:");
+		System.out.println("Enter your choice:");
 		System.out.println("\t1.Book ticket");
 		System.out.println("\t2.view status");
 		System.out.println("\t3.Exit");
@@ -56,16 +56,16 @@ public class ticket {
 	}
 	
 	static void status() {
-		System.out.println("\nName        :  "+username);
+		System.out.println("Name        :  "+username);
 		System.out.println("Movie Name  :  "+moviename);
 		System.out.println("Movie Date  :  "+moviedate);
 		System.out.println("Movie Time  :  "+movietime);
 		System.out.println("Ticket Booked at "+seats);
-		System.out.println("\nA"+A);
+		System.out.println("A"+A);
 		System.out.println("B"+B);
 		System.out.println("C"+C);
 		System.out.println("D"+D);
-		System.out.println("E"+E+"\n");
+		System.out.println("E"+E);
 		ticketbook();
 	}
 	
@@ -139,11 +139,11 @@ public class ticket {
 	
 	static void seatings() {
 		
-		System.out.println("\nA"+A);
+		System.out.println("A"+A);
 		System.out.println("B"+B);
 		System.out.println("C"+C);
 		System.out.println("D"+D);
-		System.out.println("E"+E+"\n");
+		System.out.println("E"+E);
 		System.out.println("How many ticket want to book");
 		count=sc.nextInt();
 		for(int i=1;i<=count;i++){
@@ -184,12 +184,12 @@ public class ticket {
 	}
 	
 	static void rate() {
-		System.out.println("........Total Rate is Rs."+movierate*count+"........");
+		System.out.println("Total Rate is "+movierate*count);
 		System.out.println("Enter your choice:\n\t1.Make Payment\n\t2.Exit Payment");
 		int n=sc.nextInt();
 		switch(n){
 			case 1:
-				System.out.println("\n........Ticket booked........\n");
+				System.out.println("Ticket booked");
 				ticketbook();
 				break;
 			case 2:
