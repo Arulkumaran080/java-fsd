@@ -14,8 +14,12 @@ public class Main extends ticket {
 		System.out.println("\t WELCOME TO THE MOVIE TICKET BOOKING\n");
 		System.out.println("\t\t Developed by ARULKUMARAN T\n");
 		System.out.println("**************************************************************\n");
+		login();
 		
-		System.out.println("Enter your \n\t1.User login\n\t2.Update password");
+
+	}
+	static void login(){
+		System.out.println("Enter your \n\t1.User login\n\t2.Admin");
 		int n=sc.nextInt();
 		if(n==1){
 			user();
@@ -26,14 +30,19 @@ public class Main extends ticket {
 		else{
 			System.out.println("Enter wrong number");
 		}
-
 	}
 	static void PasswordChange() {
-		Scanner sc=new Scanner(System.in);
+		System.out.println("Do you want to change the password, press(y or n)...");
+		char ch=sc.next().charAt(0);
+		if(ch!='y'){
+			System.out.println("...Exited...");
+			login();
+		}
 		System.out.println("Enter new password : ");
-		password=sc.nextLine();
+		password=new Scanner(System.in).nextLine();
 		System.out.println("Your password is updated");
-		user();
+		login();
+		
 	}
 	static void user(){
 		System.out.println("Enter User name : ");
