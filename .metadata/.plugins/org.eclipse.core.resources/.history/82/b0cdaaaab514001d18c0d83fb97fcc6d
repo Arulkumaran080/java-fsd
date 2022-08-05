@@ -29,6 +29,7 @@ public class ticket {
 			E.add(i,(i+1)+"-Empty");
 		}
 	}
+	
 	static String username;
 	static String moviename;
 	static double movierate;
@@ -54,7 +55,6 @@ public class ticket {
 				break;
 		}
 	}
-	
 	static void status() {
 		System.out.println("Name        :  "+username);
 		System.out.println("Movie Name  :  "+moviename);
@@ -68,7 +68,6 @@ public class ticket {
 		System.out.println("E"+E);
 		ticketbook();
 	}
-	
 	static void movie(){
 		sc=new Scanner(System.in);
 		System.out.println("Enter your movie choice:\n\t1.Rocketry - Rs.150");
@@ -102,14 +101,12 @@ public class ticket {
 				movie();
 		}
 	}
-	
 	static void date() {
 		sc=new Scanner(System.in);
 		System.out.println("Enter the Date in the format dd/mm/yyy :");	
 		moviedate=sc.nextLine();
 		time();
 	}
-	
 	static void time() {
 		sc=new Scanner(System.in);
 		System.out.println("The Movie timings are:\n\t1. 11:00 AM\n\t2. 01:00 PM\n\t3. 06:00 PM\n\t4. 10:00 PM");
@@ -136,7 +133,6 @@ public class ticket {
 				time();
 		}
 	}
-	
 	static void seatings() {
 		
 		System.out.println("A"+A);
@@ -182,7 +178,6 @@ public class ticket {
 		}
 		rate();
 	}
-	
 	static void rate() {
 		System.out.println("Total Rate is "+movierate*count);
 		System.out.println("Enter your choice:\n\t1.Make Payment\n\t2.Exit Payment");
