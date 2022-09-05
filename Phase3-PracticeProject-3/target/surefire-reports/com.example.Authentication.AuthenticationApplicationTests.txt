@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.Authentication.AuthenticationApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.865 s <<< FAILURE! - in com.example.Authentication.AuthenticationApplicationTests
+countUsers  Time elapsed: 0.28 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <4>
+	at com.example.Authentication.AuthenticationApplicationTests.countUsers(AuthenticationApplicationTests.java:44)
+
+testServiceCall  Time elapsed: 0.012 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <0>
+	at com.example.Authentication.AuthenticationApplicationTests.testServiceCall(AuthenticationApplicationTests.java:33)
+

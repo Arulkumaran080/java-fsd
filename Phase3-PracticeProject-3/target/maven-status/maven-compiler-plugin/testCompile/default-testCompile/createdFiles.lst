@@ -1,0 +1,4 @@
+com\example\Authentication\AuthenticationTests.class
+com\example\Authentication\AuthenticationWebTests.class
+com\example\Authentication\EntityTests.class
+com\example\Authentication\AuthenticationApplicationTests.class
