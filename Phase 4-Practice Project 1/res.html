@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest</title>
+    <style>
+        body {
+                  background-image: url('./resimages/foood.jpg');
+                  height: 99%;
+                  width: 99%;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+            }
+        .wd{
+            margin-top: 40px;
+            width: 300px;
+            height: 539px;
+            background-color: black;
+            opacity: 70%;
+            padding: 55px;
+
+        }
+        .wd h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font: weight 100px;;
+
+        }
+        .wd h4{
+            text-align: justify;
+            color: darkgray;
+            font-weight: normal;
+            margin: 40px auto;
+
+        }
+        .cnt{
+           
+            background-color: black;
+            background-attachment: fixed;
+            opacity: 70%;
+            padding: 55px;
+
+        } 
+    </style>
+</head>
+<body>
+    <div>
+
+      <div style="margin-left: 1200px;">
+         <a href="res.html" style="text-decoration:none;color:rgb(239, 223, 223);">Home</a>&nbsp;&nbsp;&nbsp;
+         <a href="#menu" style="text-decoration:none;color:rgb(240, 229, 229);">Menu</a>&nbsp;&nbsp;&nbsp;
+         <a href="#contact" style="text-decoration:none;color:rgb(235, 224, 224);">Contact</a>&nbsp;
+      </div>
+      <div class="wd">
+        <h1>Welcome!</h1>
+        <h4>Food is for eating, and good food is to be enjoyed… I think food is, actually, very beautiful in itself</h4>
+        </div> 
+    </div>
+    
+    <div>
+        <div style="position: relative;margin-top: 820px;"><p><h1 align="center" style="color: rgb(36, 3, 3);"id="menu" >Menu Card</h1></p>
+            <div style="margin-left: 50px;" >
+                <div>
+                    <h1 style="margin-left: 145px; text-decoration:none;color:rgb(172, 64, 64) ;">Soup</h1>
+                </div>
+                <div>
+                    <img src="./resimages/soup.jpeg" style="height: 130px;width: 180px; margin-left:200px;">
+                </div>
+                <div style="margin-top:-160px;text-decoration:none;color:white ;;" >
+                    <h5>Tomato Soup <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹50</b></h5>
+                    <h5>Mutton Soup Soup<b>&nbsp;&nbsp;₹90</b></h5>
+                    <h5>Chicken Soup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>₹70</b></h5>
+                    <h5>Crab Soup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹90</b></h5>
+                </div>
+            </div>
+            <div style="margin-left: 540px;margin-top: -210px;">
+                <div >
+                    <h1 style="margin-left: 110px;  text-decoration:none;color:rgb(172, 64, 64) ;">Main Courses</h1>
+                </div>
+                 <div style="text-decoration:none;color:white ;">
+                    <h5 >Grilled Fish and Potatoes <b style="margin-left: 50px;">₹300</b></h5>
+                    <h5>Italian Pizza <b style="margin-left: 122px;">₹350</b></h5>
+                    <h5>Veggie Pasta <b style="margin-left: 122px;">₹350</b></h5>
+                    <h5>Chicken and Potatoes <b style="margin-left: 70px;">₹550</b></h5>
+                    <h5>Deluxe Burger <b style="margin-left: 110px;">₹250</b></h5>
+                 </div>
+                <div>
+                    <img src="./resimages/pizza.jpeg" style="height: 135px;width: 180px; margin-left:290px;margin-top:-1000px;">
+                </div>
+            </div>
+            <div style="margin-left:1090px;margin-top: -265px;">
+                <div>
+                    <h1 style="text-decoration:none;color:rgb(172, 64, 64) ;">Desserts</h1>
+                </div>
+                <div style="text-decoration:none;color:white ;">
+                    <h5>Fruit Salad <b style="margin-left: 60px;">₹150</b></h5>
+                    <h5>Ice cream <b style="margin-left: 70px;">₹100</b></h5>
+                    <h5>Chocolate Cake <b style="margin-left: 35px;">₹200</b></h5>
+                    <h5>Cheese <b style="margin-left: 85px;">₹100</b></h5>
+                </div>
+                <div>
+                    <img src="./resimages/des.jpeg" style="height: 135px;width: 180px;margin-left:200px;margin-top: -150px;" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div>
+
+        <div class="cnt" id="contact">
+            <h1 style="text-decoration:none;color:white ;">Contact</h1><br>
+            <p style="text-decoration:none;color:white ;">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+            <p class="cnt-txt" style="text-decoration:none;color:white ;"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+            <p style="text-decoration:none;color:white ;">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <form action="/action_page.php" target="_blank">
+              <p><input class="cnt-inp" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="cnt-inp" type="number" placeholder="How many people" required name="People"></p>
+              <p><input class="cnt-inp" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+              <p><input class="cnt-inp" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+              <p><button class="cnt-button" type="submit">SEND MESSAGE</button></p>
+            </form>
+
+    </div>
+    
+    
+    
+</body>
+</html>
